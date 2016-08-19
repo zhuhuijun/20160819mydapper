@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B68064DC-7E52-4751-89AA-10EA77D70622}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rabinbow.EfModels</RootNamespace>
+    <AssemblyName>Rabinbow.EfModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bas_consumerextend.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_doorinout.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_livecount.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_orginationinfo.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_pxcontent.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_saftycheck.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_saftystatus.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_XungengRecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_zhengshurecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bas_zhengshurecordsmall.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cod_keyval.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DapperModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DapperModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DapperModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DapperModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DapperModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="data_unlawrecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Doc.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocDetail.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocUsersDetail.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocUsersDetailbk07081249.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Loginer.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageImageInfo.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageInfo.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrivilegeUploadLog.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rel_userteacherecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templete.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TempleteDetail.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_a_Attendence.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_a_Holiday.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_a_HolidayType.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_a_Shift_Attendence.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_a_SystemParam.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Camera.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_CameraTriggerSource.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Consumer.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Consumer_Delete.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Consumer_Other.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_ControlHolidays.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Controller.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_ControllerTaskList.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Controller_Zone.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Controller_Zone4Operator.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_ControlSeg.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Door.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_ElevatorGroup.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Floor.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Group.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Group4Meal.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Group4Operator.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_group4PCCheckAccess.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_IDCard_Lost.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_MealSetup.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_Reader.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_ReaderPassword.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_ShiftSet.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_b_UserFloor.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_AttendenceData.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_AttStatistic.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_doorFirstCardUsers.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_doorMoreCardsUsers.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Leave.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_ManualCardRecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_mapdoors.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_maps.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Meeting.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_MeetingAdr.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_MeetingConsumer.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_PatrolDetailData.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_PatrolPlanData.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_PatrolRouteDetail.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_PatrolRouteList.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_PatrolStatistic.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Privilege.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_PrivilegeType.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Privilege_Of_PrivilegeType.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Reader4Meal.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Reader4Meeting.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_ShiftData.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_shift_AttReport.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_shift_AttStatistic.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_Shift_Work_Schedule.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_d_SwipeRecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_s_Operator.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_s_OperatorPrivilege.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_s_wglog.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitInfo.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserConsumer.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoDeleted.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WatchingLog.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="XungengRecord.cs">
+      <DependentUpon>DapperModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DapperModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DapperModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="DapperModel.edmx.diagram">
+      <DependentUpon>DapperModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DapperModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DapperModel.edmx</DependentUpon>
+      <LastGenOutput>DapperModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DapperModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DapperModel.edmx</DependentUpon>
+      <LastGenOutput>DapperModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
