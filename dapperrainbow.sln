@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.Models", "Rainbow.Models\Rainbow.Models.csproj", "{BBAEFCA0-0BEE-4CCA-9B62-71E4CED55FAC}"
 EndProject
@@ -27,6 +27,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.Domain", "Rainbow.Domain\Rainbow.Domain.csproj", "{8727F3AD-37C0-4F34-B41C-A5B3EA4D7890}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.IDal", "Rainbow.IDal\Rainbow.IDal.csproj", "{909ACCB7-2D92-4916-9C19-0F1C58BD6679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.Core", "Rainbow.Core\Rainbow.Core.csproj", "{B85DC4C9-F84C-4649-9C53-14A0C9FE6B1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{909ACCB7-2D92-4916-9C19-0F1C58BD6679}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{909ACCB7-2D92-4916-9C19-0F1C58BD6679}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{909ACCB7-2D92-4916-9C19-0F1C58BD6679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B85DC4C9-F84C-4649-9C53-14A0C9FE6B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85DC4C9-F84C-4649-9C53-14A0C9FE6B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85DC4C9-F84C-4649-9C53-14A0C9FE6B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85DC4C9-F84C-4649-9C53-14A0C9FE6B1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

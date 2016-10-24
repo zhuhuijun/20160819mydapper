@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContextFactory.cs" />
+    <Compile Include="dalextend\bas_userDal_Extend.cs" />
     <Compile Include="dal\bas_userDal.cs">
       <DependentUpon>DalTemplate.tt</DependentUpon>
     </Compile>

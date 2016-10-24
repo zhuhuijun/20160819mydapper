@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rainbow.Dal;
 using Rainbow.IDal;
@@ -10,6 +11,9 @@ namespace Rainbow.UnitTest
     [TestClass]
     public class UnitTestDal
     {
+        /// <summary>
+        /// 测试插入
+        /// </summary>
         [TestMethod]
         public void TestInsert()
         {
@@ -20,13 +24,21 @@ namespace Rainbow.UnitTest
                 rowname = "admin",
                 createtime = DateTime.Now
             };
-           int t =  roledal.Insert(one);
+            bool res = roledal.Insert(one);
         }
+        /// <summary>
+        /// 获得所有的数据
+        /// </summary>
         [TestMethod]
         public void TestGetAll()
         {
             Isys_roleDal roledal = new sys_roleDal();
             IEnumerable<sys_role> t = roledal.GetAll();
+        }
+        [TestMethod]
+        public void getId()
+        {
+
         }
     }
 }

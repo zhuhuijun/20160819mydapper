@@ -53,16 +53,6 @@ namespace Rainbow.Dal
     /// </summary>
     public partial class <#=tb_name#>Dal:I<#=tb_name#>Dal    
     {    
-	    public <#=tb_name#> Create()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Update(<#=tb_name#> entity)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Edit(<#=tb_name#> entity)
         {
             throw new NotImplementedException();
@@ -72,16 +62,24 @@ namespace Rainbow.Dal
         /// </summary>
         /// <param name="entity">实体<#=tb_name#></param>
         /// <returns></returns>
-        public int Insert(<#=tb_name#> entity)
+        public bool Insert(<#=tb_name#> entity)
         {
-            using (var sqlConnection= ContextFactory.GetContext())
+		    try
             {
-                sqlConnection.Open();
-                var db = MyDatabase.Init(sqlConnection, commandTimeout: 2);
-                int? supplierId = db.<#=tb_name#>s.Insert(entity);
-                return supplierId.Value;
-
+			   using (var sqlConnection= ContextFactory.GetContext())
+				{
+					sqlConnection.Open();
+					var db = MyDatabase.Init(sqlConnection, commandTimeout: 2);
+					db.<#=tb_name#>s.Insert(entity);
+				}
+				return true;
             }
+            catch (Exception)
+            {
+
+               return false;
+            }
+
         }
 		/// <summary>
         /// 查询所有数据
